@@ -65,7 +65,7 @@ function addToCart(article) {
 
     //Ecouter le panier avec 2 conditions couleur non nulle et quantité entre 1 et 100
     btn_envoyerPanier.addEventListener("click", (event)=>{
-        if (quantityPicked.value > 0 && quantityPicked.value <=100 && quantityPicked.value != 0){
+        if (quantityPicked.value > 0 && quantityPicked.value <=100 && quantityPicked.value != 0);{
 
     //Recupération du choix de la couleur
     let choixCouleur = colorPicked.value;
@@ -94,9 +94,15 @@ function addToCart(article) {
 Pour consulter votre panier, cliquez sur OK`)){
             window.location.href ="cart.html";
         }
+
+        else {
+           // Code à éxécuter si l'utilisateur clique sur "Annuler" 
+           
+        }
     }
 
-    //Importation dans le local storage
+  
+        //Importation dans le local storage
     //Si le panier comporte déjà au moins 1 article
     if (produitLocalStorage) {
     const resultFind = produitLocalStorage.find(
