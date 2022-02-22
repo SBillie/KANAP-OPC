@@ -131,4 +131,5 @@ Pour consulter votre panier, cliquez sur OK`)){
         popupConfirmation();
     }}
     });
+    
 }
